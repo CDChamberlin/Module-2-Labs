@@ -1,0 +1,9 @@
+aside{
+    width: 25%;
+    height: 100vh;
+    padding-right: 15px;
+    margin-right: 15px;
+    float: left;
+    background-color: lightgrey;
+    text-wrap: ;
+}
