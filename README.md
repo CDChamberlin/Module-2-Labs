@@ -33,3 +33,20 @@ The goal of this lab is to help you familiarize with CSS. We will be using minim
  - Calc()  
 ## Lab 3: Flexbox
 The goal of this lab is to help familiarize yourself with flexbox. In this lab we will be using functional CSS which in a nutshell is very easy, e.g. m-20 class will correspond to margin with value 20 units and mt will correspond to margin-top with value 20 units.
+
+## Lab 4: Resume Website
+In this lab you will be building the entire website from scratch. You will only use very basic HTML boilerplate. Use all the skills that you’ve learned:
+- Semantic HTML
+- Sections
+- Flexbox - layouts, centering elements and spacing elements into opposite corners
+- Images and setting-border radius
+- Box-model and setting margin, padding, width and height
+- Styling text
+- Styling links
+## Lab 5: Responsive Resume Website
+In this lab you will be adding media-queries to your resume created in the previous lab. Use google chrome device toolbar to emulate smaller devices like phones and adjust the styles so the website still looks good and doesn’t require horizontal scrolling. You may consider:
+- Changing font-size
+- Changing flexbox direction
+- Adjusting flexbox parameters and aligning text
+
+
