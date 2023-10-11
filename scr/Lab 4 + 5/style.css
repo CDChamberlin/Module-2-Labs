@@ -5,10 +5,20 @@ aside{
     margin-right: 15px;
     float: left;
     z-index: 1;
+    top: 0;
+    left: 0;
     background-color: lightgrey;
     overflow-x: hidden;
     transition: .05s;
     /* text-wrap: ; */
+}
+picture{
+    border-radius: 50%;
+    height: 200px;
+    width: auto;
+}
+img{
+    border-radius: 50%;
 }
 .sidenav .closebtn {
     position: absolute;
