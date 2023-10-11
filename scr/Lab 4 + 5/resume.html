@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,18 +14,20 @@
       <!-- links to diferent sections -->
     </nav>
     <aside id="sidebar" class="sidebar">
+      <a class="closebtn" onclick="closeNav()">&times</a>
       <picture id="profile">
-        <source media="(min-width:650px)" />
+        <source media="(min-width:650px)" src="./assets/Professional Picture.png"/>
         <source media="(min-width:465)" />
         <img src="" alt="" />
       </picture>
       <address>
-        <a href="mailto:collin.d.chamberlin@gmail.com"
-          >collin.d.chamberlin@gmail.com</a
-        >
+        <a href="mailto:collin.d.chamberlin@gmail.com">
+          collin.d.chamberlin@gmail.com
+        </a>
       </address>
     </aside>
     <main>
+      <span style="font-size:20px;cursor:pointer;" onclick="openNav()">&#9776; open</span>
       <section id="keynotes">
         <h2>Summary</h2>
         <p>
@@ -146,7 +148,7 @@
         <!-- <h6><a href="./../../index.html">Lab Selector</a></h6> -->
       </nav>
     </footer>
-    <link rel="stylesheet" href="resume-style.css" />
-    <script rel="javascript" href="resume-js.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script rel="javascript" src="sript.js"></script>
   </body>
 </html>
