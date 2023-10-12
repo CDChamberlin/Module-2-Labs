@@ -8,14 +8,13 @@ aside{
     overflow-x: hidden;
     transition: .05s;
     /* text-wrap: ; */
+    align-items: center;
 }
-picture{
+
+#profile img{
     border-radius: 50%;
     height: 200px;
     width: auto;
-}
-img{
-    border-radius: 50%;
 }
 .sidenav .closebtn {
     position: absolute;

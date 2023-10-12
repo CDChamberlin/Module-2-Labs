@@ -7,6 +7,8 @@
     <meta name="author" content="Collin Chamberlin" />
     <meta name="keywords" content="HTML, CSS, JavaScript, Resume" />
     <title>Resume</title>
+    <link rel="stylesheet" href="style.css" />
+
   </head>
   <body>
     <header></header>
@@ -15,6 +17,7 @@
     </nav>
     <aside id="sidebar" class="sidebar">
       <a class="closebtn" style="cursor: pointer;" onclick="closeNav()">&times</a>
+      <br>
       <picture id="profile">
         <source media="(min-width:650px)" src="./assets/Profile Pic.png"/>
         <source media="(min-width:465)" />
@@ -22,12 +25,15 @@
       </picture>
       <address>
         <a href="mailto:collin.d.chamberlin@gmail.com">
-          collin.d.chamberlin@gmail.com
-        </a>
+          Collin Chamberlin
+        </a> <br>
+        <p>
+        <img src="./assets/house-solid.svg" alt="house" height="20px" width="auto"> Richmond, VA</p>
       </address>
     </aside>
     <main id="main">
-      <span style="font-size:20px;cursor:pointer;" onclick="openNav()">&#9776; open</span>
+      <span id="openNav" style="font-size:20px;cursor:pointer;" onclick="openNav()">&#9776; open</span>
+      
       <section id="keynotes">
         <h2>Summary</h2>
         <p>
@@ -71,7 +77,7 @@
       <section id="experience">
         <h2>Experiences</h2>
         <article>
-          <h4>Student</h4>
+          <h4>Software Developement Student</h4>
           <p class="company">Institute of Data</p>
           <p class="date">Sept 2023 - Present</p>
           <p>
@@ -142,13 +148,13 @@
           </ul>
         </article>
       </section>
+
     </main>
     <footer>
       <nav>
         <!-- <h6><a href="./../../index.html">Lab Selector</a></h6> -->
       </nav>
     </footer>
-    <link rel="stylesheet" href="style.css" />
     <script rel="javascript" src="script.js"></script>
   </body>
 </html>
