@@ -67,6 +67,30 @@ main{
     display: block;
     overflow: hidden;
   } 
-  table{
+  #table{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     width: 100%;
   }
+  #table > section{
+    width: 25%;
+  }
+
+  @media (max-width:1024px){
+    #table > div {
+        width:33%;
+    }
+}
+
+@media (max-width:768px){
+    #table > div {
+        width:50%;
+    }
+}
+
+@media (max-width:500px){
+    #table > div {
+        width:100%;
+    }
+}
