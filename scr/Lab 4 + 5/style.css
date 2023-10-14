@@ -1,3 +1,6 @@
+*{
+  font-size: 1.25rem;
+}
 aside{
     width: 0;
     height: 100%;
@@ -61,9 +64,9 @@ main{
   .panel {
     padding: 0 18px;
     background-color: white;
-    display: none;
+    display: block;
     overflow: hidden;
   } 
   table{
-    width: 75%;
+    width: 100%;
   }
