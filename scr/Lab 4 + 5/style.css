@@ -64,3 +64,6 @@ main{
     display: none;
     overflow: hidden;
   } 
+  table{
+    width: 75%;
+  }
