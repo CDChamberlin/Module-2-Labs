@@ -1,5 +1,5 @@
 *{
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 aside{
     width: 0;
@@ -72,25 +72,25 @@ main{
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
+    
   }
   #table > section{
     width: 25%;
   }
 
-  @media (max-width:1024px){
-    #table > div {
-        width:33%;
-    }
-}
-
 @media (max-width:768px){
-    #table > div {
+  
+    #table > section {
         width:50%;
+    }
+    #sidebar{
+      width: 100%;
     }
 }
 
 @media (max-width:500px){
-    #table > div {
+  
+  #table > section {
         width:100%;
     }
 }
