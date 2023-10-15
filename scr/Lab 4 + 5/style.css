@@ -64,9 +64,21 @@ main{
   .panel {
     padding: 0 18px;
     background-color: white;
-    display: block;
+    display: flex;
     overflow: hidden;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
   } 
+  .company, .date{
+    flex: 1;
+  }
+  .date{
+    text-align: right;
+  }
+  .job{
+    flex: 0;
+  }
+  
   #table{
     display: flex;
     justify-content: center;
@@ -78,7 +90,7 @@ main{
     width: 25%;
   }
 
-@media (max-width:768px){
+@media (max-width:783px){
   
     #table > section {
         width:50%;
@@ -86,11 +98,32 @@ main{
     #sidebar{
       width: 100%;
     }
+    .panel{
+      flex-direction: column;
+    }
+    .date, .company, .job{
+      flex: 0;
+    }
+    .date{
+      text-align: left;
+    }
 }
 
 @media (max-width:500px){
   
   #table > section {
         width:100%;
+    }
+    .panel{
+      flex-direction: column;
+    }
+    .date, .company, .job{
+      flex: 0;
+    }
+    .panel{
+      flex-direction: column;
+    }
+    .date, .company, ul{
+      flex: 0;
     }
 }
