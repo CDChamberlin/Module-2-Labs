@@ -7,38 +7,65 @@
     <meta name="author" content="Collin Chamberlin" />
     <meta name="keywords" content="HTML, CSS, JavaScript, Resume" />
     <title>Resume</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header></header>
     <nav>
-      <!-- links to diferent sections -->
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
     </nav>
+
     <aside id="sidebar" class="sidebar">
-      <a class="closebtn" style="cursor: pointer;" onclick="closeNav()">&times</a>
+      <a class="closebtn" style="cursor: pointer" onclick="closeNav()"
+        >&times</a
+      >
+      <br />
       <picture id="profile">
-        <source media="(min-width:650px)" src="./assets/Profile Pic.png"/>
+        <source media="(min-width:650px)" src="./assets/Profile Pic.png" />
         <source media="(min-width:465)" />
-        <img src="assets/Profile Pic.png" alt="" />
+        <img src="assets/Profile Pic.png" alt="Profile Picture" />
       </picture>
       <address>
-        <a href="mailto:collin.d.chamberlin@gmail.com">
-          collin.d.chamberlin@gmail.com
-        </a>
+        <a href="mailto:collin.d.chamberlin@gmail.com"> Collin Chamberlin </a>
+        <br />
+        <p>
+          <img
+            src="./assets/house-solid.svg"
+            alt="house"
+            height="20px"
+            width="auto"
+          />
+          Richmond, VA
+        </p>
       </address>
+      <section>
+        <p style="font-size: 1.1rem;">Hobbies</p>
+        <p style="font-size: 1rem;">Camping, Hiking, Shooting Sports, Games, online and board games, and Modeling</p>
+      </section>
     </aside>
+
     <main id="main">
-      <span style="font-size:20px;cursor:pointer;" onclick="openNav()">&#9776; open</span>
-      <section id="keynotes">
+      <span
+        id="openNav"
+        style="font-size: 20px; cursor: pointer"
+        onclick="openNav()"
+        >&#9776; open</span
+      >
+
+      <section id="keyNotes">
         <h2>Summary</h2>
         <p>
           With over four years of work experience in various roles, I am a
           versatile and adaptable professional with a passion for data analysis
-          and bookkeeping. I have a bachelor's degree in general mathematics and
-          certifications in R and SPSS, which enable me to handle high-variety
-          and high-volume data with ease and accuracy. I am currently seeking a
-          new opportunity to apply my skills and knowledge in a dynamic and
-          innovative organization that values curiosity, collaboration, and
-          continuous learning.
+          and bookkeeping. I have a bachelor's degree in Mathematical Sciences
+          and certifications in R and SPSS, which enable me to handle
+          high-variety and high-volume data with ease and accuracy. I am
+          currently seeking a new opportunity to apply my skills and knowledge
+          in a dynamic and innovative organization that values curiosity,
+          collaboration, and continuous learning.
         </p>
         <p>
           In my most recent role as a Junior Bookkeeper at Bottomline Books,
@@ -51,41 +78,50 @@
         </p>
       </section>
 
-      <section id="about me">
-        <h2>About me</h2>
-      </section>
-
       <section id="education">
-        <h2>Education</h2>
-        <h4>Virginia Commonwealth University</h4>
-        <p>Bachelor of Science, Mathematical Sciences</p>
-        <p class="date">Aug 2015 - Dec 2019</p>
+        <h2 >Education</h2>
+        <strong>Virginia Commonwealth University</strong>
+        <div style="display: flex; justify-content: space-between;">
+        <p>Bachelor of Science, Mathematical Sciences</p> <p>Aug 2015 - Dec 2019</p>
+      </div>
+        <p>Studied applied and theoritical mathematics. Learned different way to collect and analyze data. 
+          Learned different software systems to help with the analysis and processing of data. 
+          Studied the interworkings of computers, how they connect to the global web and each other. 
+        </p>
       </section>
+      <!-- Education Section End-->
 
       <section id="projects">
         <h2>Projects</h2>
-        <h3>Eagle Scout Project</h3>
-        <h3>Coding Projects</h3>
+        <div class="">
+          <div class="carousel">
+          <a class="carousel__item" href="https://github.com/CDChamberlin/Dice-Roller">Dice Roller</a>
+          <a class="carousel__item" href="#"></a>
+          <a class="carousel__item" href="#"></a>
+        </div>
       </section>
+      <!-- Projects Section End-->
 
       <section id="experience">
         <h2>Experiences</h2>
-        <article>
-          <h4>Student</h4>
+        <button class="accordion">Software Developement Student</button>
+        <article class="panel">
           <p class="company">Institute of Data</p>
           <p class="date">Sept 2023 - Present</p>
-          <p>
-            I am studying to become a Software Developer. I am working with
+          <p class="break"></p>
+          <p>I am studying to become a Software Developer. I am working with
             HTML, CSS, and JavaScript.
           </p>
         </article>
-        <article>
-          <h4>Insurance Agent</h4>
+
+        <button class="accordion">Insurance Agent</button>
+        <article class="panel">
           <p class="company">
             Globe Life Liberty National Division - Richmond Agency
           </p>
           <p class="date">Mar 2023 - May 2023 (3 mos)</p>
-          <ul>
+          <p class="break"></p>
+          <ul class="job">
             <li>Earned my Virginia insurance licence</li>
             <li>Set up and met with prospective clients at home</li>
             <li>
@@ -94,11 +130,12 @@
             </li>
           </ul>
         </article>
-        <article>
-          <h4>Junior Bookkeeper</h4>
+        <button class="accordion">Junior Bookkeeper</button>
+        <article class="panel">
           <p class="company">Bottomline Books, LLC</p>
           <p class="date">Jul 2022 - Apr 2023 (10 mos)</p>
-          <ul>
+          <p class="break"></p>
+          <ul class="job">
             <li>
               Reconciled checking, savings, and credit card accounts monthly
             </li>
@@ -109,18 +146,25 @@
               Posted A/R payments and credit card receipts daily within
               Quickbooks Desktop
             </li>
-          </ul>
+          </section>
         </article>
-        <article>
-          <h4>Mathematics Tutor</h4>
+        <button class="accordion">Mathematics Tutor</button>
+        <article class="panel">
           <p class="company">Axiom Educators</p>
           <p class="date">Mar 2022 - Jun 2022 (4 mos)</p>
+          <p class="break"></p>
+          <ul>
+            <li>Assited students independly or in small groups to help improve their skills</li>
+            <li>Monitored student progress</li>
+            <li>Identified areas of improvement</li>
+          </ul>
         </article>
-        <article>
-          <h4>FC Associate 1</h4>
+        <button class="accordion">FC Associate 1</button>
+        <article class="panel">
           <p class="company">Amazon.com, Inc</p>
           <p class="date">Oct 2017 - Jan 2022 (4 yrs, 1 mos)</p>
-          <ul>
+          <p class="break"></p>
+          <ul class="job">
             <li>
               Acted as Water Spider at Sortation Facility in December 2017
               ensuring proper direction of materials to specific locations.
@@ -142,13 +186,62 @@
           </ul>
         </article>
       </section>
+      <!-- Experience Section End-->
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <section id="table">
+          <section>
+            <h3>Financial and Accounting</h3>
+            <ul>
+              <li>General Ledgers</li>
+              <li>Accoutns Payable</li>
+              <li>Acount Reconciliation</li>
+              <li>Bookkeeping</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Data Analysis and Statistics</h3>
+            <ul>
+              <li>R</li>
+              <li>SAS Programing</li>
+              <li>SQL</li>
+              <li>SPSS</li>
+              <li>Microsoft Excel</li>
+              <li>Statistics</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Software and Developement</h3>
+            <ul>
+              <li>Java</li>
+              <li>JavaScript</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Business and Communication</h3>
+            <ul>
+              <li>Teamwork</li>
+              <li>Leadership</li>
+              <li>Projct Management</li>
+              <li>Communication (Microsoft Powerpoint and Microsft Word)</li>
+            </ul>
+          </section>
+        </section>
+        <!-- Table end-->
+      </section>
+      <!-- Skills Section end-->
     </main>
     <footer>
       <nav>
-        <!-- <h6><a href="./../../index.html">Lab Selector</a></h6> -->
+        <h6><a href="./../../index.html">Lab Selector</a></h6>
       </nav>
     </footer>
-    <link rel="stylesheet" href="style.css" />
-    <script rel="javascript" src="sript.js"></script>
+    <script rel="javascript" src="script.js"></script>
+    <script>
+      
+    </script>
   </body>
 </html>
