@@ -1,9 +1,17 @@
+
 function openNav(){
+  var w = window.innerWidth;
+  if (w > 782){
     document.getElementById("sidebar").style.cssText="width:250px; display:content; padding:15px; border: 1px solid #ddd;";
     document.getElementById("main").style.marginLeft = "282px";
     document.getElementById("openNav").style.display = "none";
 }
-
+else{
+    document.getElementById("sidebar").style.cssText="width: 100%; display:content; padding:15px; border: 1px solid #ddd;";
+    document.getElementById("main").style.marginLeft = "0";
+    document.getElementById("openNav").style.display = "none";
+}
+}
 
 function closeNav(){
     document.getElementById("sidebar").style.cssText="width:0; display:none;";
