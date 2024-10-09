@@ -1,0 +1,251 @@
+* {
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+aside {
+    width: 250px;
+    height: 100%;
+    padding-right: 0px;
+    margin-right: 15px;
+    float: left;
+    background-color: lightgrey;
+    overflow-x: hidden;
+    transition: 0.05s;
+}
+
+#keyNotes {
+    background-color: gainsboro;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#profile img {
+    border-radius: 50%;
+    height: 200px;
+    width: auto;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+main {
+    margin-left: 250px;
+}
+#education {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+#openNav {
+    display: none;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
+    background-color: #ccc;
+}
+
+.accordion:after {
+    content: "\02795"; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: flex;
+    overflow: hidden;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+}
+.company {
+    flex: 1;
+    font-style: italic;
+}
+.date {
+    flex: 1;
+    text-align: right;
+}
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+    font-size: 0;
+}
+
+#table {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+#table > section {
+    width: 25%;
+}
+.carousel {
+    position: relative;
+}
+
+.carousel__item {
+    height: 200px;
+    background: grey;
+    padding: 1em;
+    font-weight: bold;
+    font-size: 2em;
+    color: #ffffff;
+    display: none;
+    text-align: center;
+}
+
+.carousel__item--selected {
+    display: block;
+}
+
+.carousel__nav {
+    width: 100%;
+    padding: 20px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+
+.carousel__button {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.carousel__button--selected {
+    background: rgba(255, 255, 255, 0.5);
+}
+@media (max-width: 1145px) {
+    * {
+        font-size: 1rem;
+    }
+    #table > section {
+        width: 33%;
+    }
+    #sidebar {
+        width: 100%;
+    }
+    .panel {
+        flex-direction: column;
+    }
+    .date,
+    .company,
+    .job {
+        flex: 0;
+    }
+    .date {
+        text-align: left;
+    }
+    #sidebar {
+        width: 100%;
+    }
+    #openNav {
+        display: none;
+    }
+    #main {
+        margin-left: 0;
+    }
+}
+@media (max-width: 783px) {
+    * {
+        font-size: 1rem;
+    }
+    #table > section {
+        width: 50%;
+    }
+    #sidebar {
+        width: 100%;
+    }
+    .panel {
+        flex-direction: column;
+    }
+    .date,
+    .company,
+    .job {
+        flex: 0;
+    }
+    .date {
+        text-align: left;
+    }
+    #sidebar {
+        width: 100%;
+    }
+    #openNav {
+        display: none;
+    }
+    #main {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    * {
+        font-size: 1rem;
+    }
+    #table > section {
+        width: 100%;
+        font-size: 0.75rem;
+    }
+    .panel {
+        flex-direction: column;
+    }
+    .date,
+    .company,
+    .job {
+        flex: 0;
+    }
+    .panel {
+        flex-direction: column;
+    }
+    .date,
+    .company,
+    ul {
+        flex: 0;
+    }
+    #sidebar {
+        width: 100%;
+    }
+    #openNav {
+        display: none;
+    }
+    #main {
+        margin-left: 0;
+    }
+}
